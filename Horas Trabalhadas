@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<stdlib.h>
+main(){
+	
+	float salario, hora;
+	
+	printf("\n\n\t===== Calcular salario x horas trabalhadas =====\n\n\t");
+	
+	printf("\n\nInforme quantidade de horas trabalhadas:\n");
+	scanf("%f",&hora);
+	
+	printf ("\n\nO salario a receber e: R$ %.2f\n\n", salario=hora*13.45);
+	
+	system("pause");
+	
+}
