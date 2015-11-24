@@ -1,0 +1,13 @@
+#include <stdio.h>
+  
+int main() {
+  
+    int dist;
+    float gas, consumo;
+    scanf("%d",&dist);
+    scanf("%f",&gas);
+    consumo=dist/gas;
+    printf("%.3f km/l\n",consumo);
+  
+    system("pause");
+}
