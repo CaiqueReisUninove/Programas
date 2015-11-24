@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+float adicao(float A, float B){
+      return (A+B);
+}
+
+float subtracao(float A, float B){
+      return (A-B);
+}
+
+float multiplicacao(float A, float B){
+      return (A*B);
+}
+
+float divisao(float A, float B){
+      return (A/B);
+}
+
+main(){
+       int operacao=0;
+       float n1=0, n2=0, resultado=0;
+       printf("\t===== Calculadora=====\n");
+       printf("\nDigite dois numeros:\n");
+       scanf("%f%f", &n1, &n2); 
+       printf("Escolha a opcao:\n[1] - Adicao \n[2] - Subtracao \n[3] - Multiplicacao \n[4] - Divisao \n\n>");
+       scanf("%d", &operacao);
+       switch(operacao){
+       case 1:printf("\nResultado da operacao: %.1f\n\n", resultado=adicao(n1,n2)); break;
+       case 2:printf("\nResultado da operacao: %.1f\n\n", resultado=subtracao(n1,n2)); break;
+       case 3:printf("\nResultado da operacao: %.1f\n\n", resultado=multiplicacao(n1,n2)); break;
+       case 4:if (n2==0)
+            printf("Divisao por zero!\n\n");
+                else{
+                printf("\nResultado da operacao: %.1f\n\n", resultado=divisao(n1,n2));
+                }
+            break;
+            default: printf("Opcao invalida!!!!\n\n");
+            }
+       system("pause");
+}
